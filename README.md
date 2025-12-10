@@ -116,25 +116,18 @@ This must include:
 GLD (actual gold price)
 
 Predictor features:
-
 SPX, USO, SLV, EUR/USD
 
 And any additional features used by your model.
-
 🧠 Model
 
 This app uses:
-
 Random Forest Regression (RF_regression_model.pkl)
-
 Exported via joblib.
-
 The model must include feature_names_in_ (automatically added by scikit-learn 1.2+).
 
 💬 Support
-
 If you'd like help:
-
 ✔ Adding forecasting (7-day / 30-day)
 ✔ Adding candlestick charts
 ✔ Improving the UI
@@ -142,8 +135,6 @@ If you'd like help:
 ✔ Automating dataset updates
 
 Just open an issue or request enhancements!
-
 ⭐️ Want to contribute?
-
 Pull requests are welcome!
 Improving the model, UI, or documentation is encouraged
