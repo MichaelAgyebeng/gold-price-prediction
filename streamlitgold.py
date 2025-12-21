@@ -7,14 +7,14 @@ import os
 # -----------------------
 # Load Model & Data
 # -----------------------
-regressor = joblib.load(r"F:\Gold price prediction ML\RF_regression_model.pkl")
-data = pd.read_csv(r"F:\Gold price prediction ML\gld_price_data.csv")  # <-- update path
+regressor = joblib.load(r"C:\Users\Church Of Christ\Documents\Gold price prediction ML\RF_regression_model.pkl")
+data = pd.read_csv(r"C:\Users\Church Of Christ\Documents\Gold price prediction ML\gld_price_data.csv")  # <-- update path
 
 st.set_page_config(page_title="Gold Price Prediction", layout="wide")
 
 # Optional banner image
 
-banner_path = r"F:\Gold price prediction ML\gold_banner.jpg"
+banner_path = r"C:\Users\Church Of Christ\Documents\Gold price prediction ML\gold_banner.jpg"
 
 if os.path.exists(banner_path):
     st.image(banner_path, width="stretch")
@@ -94,7 +94,7 @@ with tabs[1]:
             hovermode="x unified"
         )
 
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width="stretch")
 
     except Exception as e:
         st.error(f"Could not generate chart: {e}")
